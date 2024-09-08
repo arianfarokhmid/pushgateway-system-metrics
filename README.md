@@ -1,3 +1,4 @@
-to run top.sh command every 2 second , just add a crontab like this:
+crontab doesnt support less htan 1 min, so in script i added sleep 3 sec and cron tab runs it every 3 sec
+to run top.sh command every 3 second , just add a crontab like this:
 
-* * * * * sleep 3 && /bin/bash top.sh
+* * * * * /bin/bash top.sh
